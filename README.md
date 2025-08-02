@@ -22,6 +22,8 @@ To run each case, simply execute the corresponding `.py` file. The script will:
 3. Train the PINN using gradient-based optimization.
 4. Evaluate the trained model and generate the graphics.
 
+## Validation of PINNs as a tool to solve ODE
+
 We consider the following ODE:
 
 d²y/dx² + y = 0  
@@ -55,7 +57,6 @@ The loss function is composed of data and PDE parts. The PINN optimizes both, wh
 L = λ_DATA × L_DATA + λ_PDE × L_PDE
 
 where **L_DATA** measures the error on experimental data, and **L_PDE** is the residual of the differential equation evaluated at collocation points. The weights are fixed as λ_DATA = λ_PDE = 0.5, giving equal importance to both terms.
----
 
 ## Results
 
@@ -65,8 +66,8 @@ where **L_DATA** measures the error on experimental data, and **L_PDE** is the r
 
 | Interval              | PINN MSE    | Simple NN MSE  |
 |-----------------------|-------------|----------------|
-| Training \([0, 2\pi]\)         | 0           | 0.00007        |
-| Extrapolation \([2\pi, 4\pi]\) | 0.00002     | 1.92391        |
+| Training [0, 2π]        | 0           | 0.00007        |
+| Extrapolation [2π, 4π] | 0.00002     | 1.92391        |
 
 ---
 
@@ -76,8 +77,8 @@ where **L_DATA** measures the error on experimental data, and **L_PDE** is the r
 
 | Interval              | PINN MSE    | Simple NN MSE  |
 |-----------------------|-------------|----------------|
-| Training \([0, 2\pi]\)         | 0           | 1.99689        |
-| Extrapolation \([2\pi, 4\pi]\) | 0           | 5.13736        |
+| Training [0, 2π]         | 0           | 1.99689        |
+| Extrapolation [2π, 4π] | 0           | 5.13736        |
 
 ---
 
@@ -87,9 +88,11 @@ where **L_DATA** measures the error on experimental data, and **L_PDE** is the r
 
 | Interval              | PINN MSE    | Simple NN MSE  |
 |-----------------------|-------------|----------------|
-| Training \([0, 2\pi]\)         | 0.00048     | 1.40306        |
-| Extrapolation \([2\pi, 4\pi]\) | 0.00161     | 1.43553        |
+| Training [0, 2π]        | 0.00048     | 1.40306        |
+| Extrapolation [2π, 4π] | 0.00161     | 1.43553        |
 
+
+## Validation of PINNs as a tool to solve inverse problems
 
 After validating PINNs as a tool to solve differential equations, we now explore their ability to solve inverse problems.
 
