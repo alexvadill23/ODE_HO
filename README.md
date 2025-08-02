@@ -46,6 +46,7 @@ where \(L_{\text{DATA}}\) measures the error on experimental data, and \(L_{\tex
 ## 📊 Results
 
 ### Case 1: Abundant training data in \([0, 2\pi]\)
+![PINN vs NN vs cos(x)](comparacion_funciones_completa.png)
 
 | Interval              | PINN MSE    | Simple NN MSE  |
 |-----------------------|-------------|----------------|
