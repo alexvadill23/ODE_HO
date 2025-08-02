@@ -112,6 +112,3 @@ During training, the PINN attempts to find the values of all parameters (includi
 
 ![evolution of the parameter 'a' throughout the epochs](parameter_evolution.png)
 
-
-
-****
