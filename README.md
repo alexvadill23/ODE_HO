@@ -46,7 +46,8 @@ where \(L_{\text{DATA}}\) measures the error on experimental data, and \(L_{\tex
 ## 📊 Results
 
 ### Case 1: Abundant training data in \([0, 2\pi]\)
-![PINN vs NN vs cos(x)](comparacion_funciones_completa.png)
+
+![PINN vs NN vs cos(x) with abundant data points](comparacion_funciones_completa.png)
 
 | Interval              | PINN MSE    | Simple NN MSE  |
 |-----------------------|-------------|----------------|
@@ -57,6 +58,8 @@ where \(L_{\text{DATA}}\) measures the error on experimental data, and \(L_{\tex
 
 ### Case 2: Minimal training data in \([0, 2\pi]\)
 
+![PINN vs NN vs cos(x) with minimal data points](comparacion_funciones_2.png)
+
 | Interval              | PINN MSE    | Simple NN MSE  |
 |-----------------------|-------------|----------------|
 | Training \([0, 2\pi]\)         | 0           | 1.99689        |
@@ -65,6 +68,8 @@ where \(L_{\text{DATA}}\) measures the error on experimental data, and \(L_{\tex
 ---
 
 ### Case 3: Only boundary conditions at \(x = 0\)
+
+![PINN vs NN vs cos(x) with only BC](BC_comparacion_funciones.png)
 
 | Interval              | PINN MSE    | Simple NN MSE  |
 |-----------------------|-------------|----------------|
