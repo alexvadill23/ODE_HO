@@ -10,17 +10,7 @@ This repository contains the code developed to solve a second-order ordinary dif
 - `case_3.py`: Code for Case 3 using boundary conditions.
 - `inverse_problem.py`: Solves the inverse problem where the parameter 'a' is learned.
 - `README.md`: Project documentation.
-- 
-## Code Functionality
 
-Each script defines and trains a Physics-Informed Neural Network (PINN) as well as an ordinary Neural Network to solve a specific differential equation problem. The PINN architecture, loss function, training procedure, and evaluation are implemented directly in the script.
-
-To run each case, simply execute the corresponding `.py` file. The script will:
-
-1. Define the neural network architecture.
-2. Set up the loss function using data points and the residual of the differential equation.
-3. Train the PINN using gradient-based optimization.
-4. Evaluate the trained model and generate the graphics.
 
 ## Validation of PINNs as a tool to solve ODE
 
